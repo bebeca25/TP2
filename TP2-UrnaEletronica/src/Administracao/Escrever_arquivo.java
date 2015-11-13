@@ -15,9 +15,7 @@ public class Escrever_arquivo {
     public static void escrever_arquivo(ArrayList<Eleitor> ListaEleitor) throws IOException {
         Iterator i = ListaEleitor.iterator();
         File arquivo = new File("ListaEleitor.txt");
-        //verifica se o arquivo ou diretório existe
-        boolean existe = arquivo.exists();
-                
+                  
    
              while (i.hasNext()) {
             Eleitor e = (Eleitor) i.next();
