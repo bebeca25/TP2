@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,8 +18,7 @@ public class Escrever_arquivo {
         //verifica se o arquivo ou diretório existe
         boolean existe = arquivo.exists();
                 
-            
-
+   
              while (i.hasNext()) {
             Eleitor e = (Eleitor) i.next();
             try (
